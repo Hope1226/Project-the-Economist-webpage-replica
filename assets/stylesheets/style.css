@@ -67,6 +67,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: rgb(47, 116, 243);
 }
 
 .nav-top a {
@@ -97,6 +98,7 @@ a:hover {
 .btn-sub:hover {
   text-decoration: none;
   background: rgb(3, 3, 157);
+  color: white;
 }
 
 .sign-in-btn {
@@ -317,4 +319,107 @@ small {
 
 .magazine-cover .magazine-details .btn {
   font-weight: bolder;
+}
+
+/* Express news sections */
+.politics .pol-main img{
+  height: 300px;
+
+}
+
+.politics .pol-aside .aside-item img {
+  height: 150px;
+}
+
+.politics {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+  "header header"
+  "main-event aside-events";
+  font-size: 0.6rem;
+  grid-gap: 10px;
+  border-top: 1px solid grey;
+  padding: 10px 0;
+}
+
+.section-heading {
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+}
+
+.pol-main {
+  grid-area: main-event;
+  border-right: 1px solid grey;
+}
+
+.pol-aside {
+  grid-area: aside-events;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.aside-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid grey;
+}
+
+
+.politics h1, a {
+  padding: 0;
+  margin: 0;
+}
+
+/* recomended articles section */
+.express-news .express img {
+  height: 100px;
+}
+
+.express-news .graphic-detail img {
+  height: 400px;
+}
+.express-news {
+  font-size: 0.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  border-top: 1px solid grey;
+  padding: 10px 0;
+}
+
+ol li a {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+ol li {
+  padding: 0;
+  border-bottom: 1px solid grey;
+}
+
+ol {
+  list-style: none;
+
+
+}
+
+
+.numbers {
+  font-size: 2rem;
+  color: red;
+  padding: 0 20px;
+
+}
+
+.graphic-detail {
+  padding-left: 10px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  border-left: 1px solid grey;
+
 }
