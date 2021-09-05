@@ -56,8 +56,8 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
   justify-content: start;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 a {
@@ -209,7 +209,7 @@ small {
   padding: 10px;
   display: grid;
   align-content: space-between;
-  background: rgba(218, 218, 218, 0.508);
+  background: rgba(226, 226, 226, 0.508);
 }
 
 .brief-world .heading {
@@ -222,4 +222,99 @@ small {
   height: 5px;
   background: red;
   right: 220px;
+}
+
+/* popular articles section */
+
+.articles {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 20px 0;
+}
+
+.articles .article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr 1fr;
+  padding: 10px 0;
+  border-right: 1px solid grey  ;
+}
+
+.articles .article >* {
+  padding: 0;
+  margin: 0;
+  font-size: 0.5rem;
+}
+.articles img {
+  width: 100%;
+  height: 100%;
+}
+
+.articles .art-4 {
+  border-right: none !important;
+}
+
+.articles .art-1, .art-2, .art-3 {
+  padding-right: 10px !important;
+}
+
+/* magazine cover section */
+
+.magazine-cover {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 50px 30px;
+  background: rgba(226, 226, 226, 0.508);
+  grid-gap: 60px;
+}
+
+.magazine-cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.magazine-cover .magazine-details {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.magazine-cover .magazine-details >*{
+  display: block;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.magazine-cover .magazine-details #date {
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.magazine-cover .magazine-details h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.magazine-cover .magazine-details .highligths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  border-top: 1px solid grey;
+  padding: 10px 0;
+}
+
+.magazine-cover .magazine-details .highligths .highlight3, .highlight4 {
+  border-top: 1px solid grey;
+  padding-top: 10px;
+}
+
+.magazine-cover .magazine-details .highligths a{
+  font-weight: bold;
+}
+
+.magazine-cover .magazine-details .btn {
+  font-weight: bolder;
 }
